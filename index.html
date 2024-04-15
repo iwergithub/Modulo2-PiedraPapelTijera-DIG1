@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel o Tijera</title>
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funciones.js"></script>
+
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="inicio">
+            <div class="auxcont1">
+                <a class="patron--" href=""></a>
+            </div>
+            <div class="auxcont2">
+                <h2>Juega contra tu computador!!!</h2>
+                <img src="./imgs/piedraPapelTijera.png" alt="">
+                <button class="btn_inicio">Iniciar</button>
+            </div>
+        
+        </div>
+        <div class="usuario_elige">
+            <img src="./imgs/usuarioEleccion.png" alt="">
+            <ul>
+                <li>
+                    <div class="animacion_piedra"></div>
+                    <button class="btn_piedra">Piedra</button>
+                </li>
+                <li>
+                    <div class="animacion_papel"></div>
+                    <button class="btn_papel">Papel</button>
+                </li>
+                <li>
+                    <div class="animacion_tijera"></div>
+                    <button class="btn_tijera">Tijera</button>
+                </li>
+            </ul>
+        </div>
+        <div class="computador_elige">
+            <img src="./imgs/compEleccion.png" alt="">
+            <div></div>
+            <h1 class="eleccion_computador"></h1>
+            <button class="btn_continuar">Continuar</button>
+        </div>
+        <div class="resultado">
+            <img id="image1" src="" alt="">
+            <h2></h2>
+            <img id="image2" src="" alt="">
+            <button>Otra?</button>
+        </div>
+    </div>
+</body>
+
+</html>

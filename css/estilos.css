@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+box-sizing: border-box;
+font-family: 'rubik';
+--p1: #E84104;
+--p2: rgb(255, 198, 4);
+--p3: #F880FF;
+--p4: #0426E8;
+--p5: #04FFC5;
+--p6: #000000;
+--p7: #E0DEC7;
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: var(--p7);
+}
+.contenedor .inicio{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+.auxcont1{
+    background: var(--p2);
+}
+.auxcont2{
+    height: 100vh;
+    background: var(--p4);
+    text-align: center;
+    font-weight: 300;
+}
+.contenedor .inicio .auxcont2 img{
+    height: 538px;
+}
+
+.contenedor .inicio .auxcont2 h2{
+    padding-top: 50px;
+    color:  var(--p7);
+}
+button{
+    display: block;
+    background: var(--p3);
+    text-transform: capitalize ;
+    color:var(--p6);
+    height: 90px;
+    width: 240px;
+    font-weight:900;
+    font-size: 30px;
+    max-width: 900px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0,0.8);
+}
+button:hover{
+    background: var(--p5);
+}
+button:active{
+    background: var(--p2);
+    box-shadow: 0px 0px 20px rgba(255, 198, 4, 0.8);
+}
+.usuario_elige img, .computador_elige img, .resultado>img{
+    padding-top: 100px;
+    height: 90px;
+}
+.usuario_elige, .computador_elige, .resultado{
+    background: var(--p4);
+    height: 100vh;
+    text-align: center;
+}
+.resultado #image2{
+    padding: 10px;
+    height: 250px;
+}
+.usuario_elige ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding:  50px 200px;
+}
+.computador_elige h1{
+    text-transform: capitalize;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.resultado h2{
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+}
+.usuario_elige ul li{
+    width: 300px;
+    transition: all 300ms;
+}
+.usuario_elige ul li:hover{
+    transform: scale(1.2);
+}
+.usuario_elige ul li:hover .animacion_papel, .usuario_elige ul li:hover .animacion_tijera, .usuario_elige ul li:hover .animacion_piedra{
+    animation: anim_sprites 1500ms steps(23) alternate infinite;
+}
+.usuario_elige ul li div{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #000;
+}
+.usuario_elige ul li .animacion_papel, .computador_elige .animacion_papel{
+    background: url(../imgs/sprite_papel.png);
+
+}
+.usuario_elige ul li .animacion_tijera, .computador_elige .animacion_tijera{
+    background: url(../imgs/sprite_tijeras.png);
+}
+.usuario_elige ul li .animacion_piedra, .computador_elige .animacion_piedra{
+    background: url(../imgs/sprite_piedra.png);
+}
+.computador_elige .animacion_papel, .computador_elige .animacion_tijera, .computador_elige .animacion_piedra{
+    animation: anim_sprites 1500ms steps(23) alternate infinite;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.resultado{
+    text-align: center;
+}
+@keyframes anim_sprites {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -6900px 0;
+    }
+}
