@@ -4,3 +4,5 @@ este es el ejercicio de hacer un juego PIERDRA PAPEL Y TIJERA
 COSAS QUE FALTAN:
 *backgrounds mejorados
 *interactividad en FIGMA
+*botones en la seccionde piedra papel o tijera
+ 
